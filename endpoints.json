@@ -1,5 +1,24 @@
 {
   "regions": {
+    "me-south-1": {
+      "cloudfront": {
+        "http": true,
+        "https": true,
+        "hostname": "cloudfront.amazonaws.com",
+        "authregion": "us-east-1"
+      },
+      "s3": {
+        "http": true,
+        "https": true,
+        "hostname": "s3-me-south-1.amazonaws.com"
+      },
+      "sts": {
+        "http": false,
+        "https": true,
+        "hostname": "sts.amazonaws.com",
+        "authregion": "us-east-1"
+      }
+    },
     "us-east-1": {
       "cognito-sync": {
         "http": false,
@@ -1497,6 +1516,7 @@
       "cn-north-1"
     ],
     "cloudfront": [
+      "me-south-1",
       "us-east-1",
       "us-west-1",
       "us-west-2",
@@ -1663,6 +1683,7 @@
       "us-gov-west-1"
     ],
     "s3": [
+      "me-south-1",
       "us-east-1",
       "us-west-1",
       "us-west-2",
@@ -1723,6 +1744,7 @@
       "sa-east-1"
     ],
     "sts": [
+      "me-south-1",
       "us-east-1",
       "us-west-1",
       "us-west-2",
